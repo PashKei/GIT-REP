@@ -1,1 +1,114 @@
-11
+/* ШАПКА */
+
+body {
+  display: flex;
+  margin: 0 0 40px 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  background-color: #a23645;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.header-inside {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 900px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0 10px;
+}
+
+.writers {
+  font-weight: 500;
+}
+
+.header-list {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0 10px;
+  height: 100%;
+}
+
+.header-list:hover {
+  background-color: #912f3c;
+  cursor: pointer;
+}
+
+/* КОНТЕНТ */
+
+.body {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* align-self: center; */
+  gap: 0 20px;
+}
+
+/* ЛЕВЫЙ БЛОК КОНТЕНТА */
+
+.body-main {
+  width: auto;
+}
+
+.body-main p {
+  line-height: 1.5;
+}
+
+/* ПРАВЫЙ БЛОК КОНТЕНТА */
+
+.body-aside {
+  background-color: #e7e7e7;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.body-aside img {
+  width: 172px;
+  height: auto;
+}
+
+/* БЛОК С ДРУГИМИ АВТОРАМИ */
+
+.similar-authors {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0 10px;
+  border: solid 1px #aaaaaa;
+  padding: 16px;
+}
+
+.author {
+  text-align: center;
+  overflow: hidden;
+}
+
+.author:hover {
+  cursor: pointer;
+}
+
+.author img {
+  width: 168px;
+  height: 240px;
+}
